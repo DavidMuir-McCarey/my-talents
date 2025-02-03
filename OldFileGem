@@ -1,0 +1,18 @@
+source 'https://rubygems.org'
+
+gem 'github-pages', '~> 232'
+gem 'faraday-retry'
+
+# Windows-specific gems
+platform :mswin, :mingw, :x64_mingw do
+  gem 'wdm', '~> 0.2.0'  # Updated to match available version
+  gem 'tzinfo-data'
+end
+
+group :jekyll_plugins do
+  gem 'jekyll-gist'
+  gem 'jekyll-paginate'
+end
+
+gem 'asciidoctor', '~> 2.0.0'
+gem 'coderay', '~> 1.1.3'

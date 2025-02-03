@@ -1,0 +1,58 @@
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #2ba6cb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+    
+    &:hover {
+        background: darken(#2ba6cb, 10%);
+        color: #fff;
+    }
+}
+
+.pdf-container {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.header-profile-photo {
+    position: absolute;
+    z-index: 2;
+    
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        object-fit: cover;
+    }
+}
+
+// Small screens
+@media screen and (max-width: 40em) {
+    .header-profile-photo {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+// Medium screens
+@media screen and (min-width: 40.063em) and (max-width: 64em) {
+    .header-profile-photo {
+        bottom: 160px;    // Increase this value to move up (from 100px)
+        left: 20px;       // Decrease this value to move left (from 60px)
+    }
+}
+
+// Large screens
+@media screen and (min-width: 64.063em) {
+    .header-profile-photo {
+        bottom: 200px;    // Increase this value to move up (from 140px)
+        left: 40px;       // Decrease this value to move left (from 80px)
+    }
+}
