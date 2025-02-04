@@ -200,9 +200,15 @@ body.video cite { color: #fff; }
 }
 
 .top-bar-section {
+  display: flex;
+  justify-content: center; /* Add this to center the menu */
+  width: 100%; /* Ensure full width */
+  
   ul {
     display: flex;
     gap: 1rem;
+    align-items: center; /* Add this to vertically center items */
+    margin: 0; /* Reset any margins */
     li {
       float: none;
       a {
